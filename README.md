@@ -12,7 +12,7 @@ Started:
 Finished:
 
 3. Shell Script;
-Started:
+Started: 2017-10-02
 Finished:
 
 4. Lua;

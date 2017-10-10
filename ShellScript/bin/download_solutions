@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# Script to Download PDF files.
+# Solutions-CLRS from http://sites.math.rutgers.edu/~ajl213/
+# Ruy Castilho Barrichelo
+
+# Chapters 1~35
+for i in {1..35}; do
+
+    if ! [ -e "Ch$[i].pdf" ] ; then
+        wget "http://sites.math.rutgers.edu/~ajl213/CLRS/Ch$[i].pdf"
+
+    fi
+
+done;
+
+wget "http://sites.math.rutgers.edu/~ajl213/CLRS/Appendix A.pdf"
+wget "http://sites.math.rutgers.edu/~ajl213/CLRS/Appendix B.pdf"
+wget "http://sites.math.rutgers.edu/~ajl213/CLRS/Appendix C.pdf"
+wget "http://sites.math.rutgers.edu/~ajl213/CLRS/Appendix D.pdf"

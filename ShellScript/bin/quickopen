@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# Ruy Castilho Barrichelo
+# Script to open files w/o output and disown them from the terminal
+
+quickopen() {
+
+    case "$1" in
+        *.pdf)          nohup evince "$1" >/dev/null 2>&1 & disown;;
+        *.txt|*.out)    nohup gedit "$1" >/dev/null 2>&1 & disown;;
+
+    esac
+
+
+}
